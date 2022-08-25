@@ -1,0 +1,24 @@
+{
+  "name": "cloudflare-ddns-nodejs",
+  "version": "1.0.0",
+  "description": "use cloudflare api to set dns record automatically",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cloudflare",
+    "ddns",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloudflare": "^2.9.1",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "prettier": "^2.7.1"
+  }
+}

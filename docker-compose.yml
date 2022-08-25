@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  cloudflare-ddns-node:
+    image: cloudflare-ddns-node:latest
+    container_name: cloudflare-ddns-node
+    security_opt:
+      - no-new-privileges:true
+    network_mode: 'host'
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - /YOU/PATH/HERE/.env:/usr/src/app/.env
+    logging:
+      driver: "json-file"
+      options:
+        max-file: 5
+        max-size: 10m
+    restart: unless-stopped
