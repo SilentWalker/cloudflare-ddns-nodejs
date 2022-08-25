@@ -1,6 +1,6 @@
 # CLOUDFLARE-DDNS-NODEJS
 
-Automatically set your local ip in cloudflare dns record, the record will update every 5 minues
+Automatically set your local ip in cloudflare dns record, the record will be updated every 5 minutes
 
 ## Authentication methods
 
@@ -26,10 +26,13 @@ At last, you need to set the cloudflare zoon id and the subdomain
 ### Node.js
 
 `npm install`
+
 `node index.js`
 
 ### Docker
 
 `sudo ./build.sh`
-edit docker-compose.yml, replace volumes path with your current path
+
+edit docker-compose.yml, replace volumes path with **your current path**
+
 `sudo docker compose up -d`
